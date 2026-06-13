@@ -2,33 +2,29 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    //private int attack = 10;
+    //public int health = 15;
+    //[SerializeField] private int speed = 10;
+    //[SerializeField] Sprite gun;
+    float num = 0;
+    float my = 0;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
-        //overpower functions (two functions with the same parameters)
-        //Debug.Log(Power(5)); //take int
-        //Debug.Log(Power(2f)); //take float
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        //Debug.Log((int)Time.time % 4);
+        num = Mathf.Repeat(Time.time, 10f);
+        Debug.Log(num);
 
-    }
+        my += 1;
+        my = Mathf.Repeat(my, 5f);
+        Debug.Log(my);
+        Debug.Log("-----------");
 
-    int Power(int num)
-    {
-        int result = num *= num;
-        return result;
-    }
-
-    float Power(float num)
-    {
-        float result = num *= num;
-        return result;
     }
 }
