@@ -1,18 +1,19 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    //string[] names = { "John", "Ann", "Mark" };
-    [SerializeField] Color32[] colors;
+    //List<string> cars = new();
+    [SerializeField] List<string> cars = new();
 
     void Start()
     {
-        //Debug.Log(names[0]);
-        //names[0] = "Adam";
-        //Debug.Log(names[0]);
-        int rnd = Random.Range(0, colors.Length);
-        GetComponent<SpriteRenderer>().color = colors[rnd];
+        cars.Add("Audi");
+        cars.Add("Honda");
+        Debug.Log(cars[0]);
 
+        cars.RemoveAt(1);
+        Debug.Log(cars.Count);
     } 
 
     void Update()
