@@ -2,18 +2,21 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    //Vector3 pos = new Vector3(1f, 2f, 3f);
-    //Vector3 pos = new(0f, 0f 0f);
-    [SerializeField] Transform enemy;
+    //string[] names = { "John", "Ann", "Mark" };
+    [SerializeField] Color32[] colors;
 
     void Start()
     {
-        //transform.position = Vector3.zero;
-    }
+        //Debug.Log(names[0]);
+        //names[0] = "Adam";
+        //Debug.Log(names[0]);
+        int rnd = Random.Range(0, colors.Length);
+        GetComponent<SpriteRenderer>().color = colors[rnd];
+
+    } 
 
     void Update()
     {
-        //transform.position += Vector3.right;
-        transform.position = Vector3.MoveTowards(transform.position, enemy.position, Time.deltaTime);
+
     }
 }
