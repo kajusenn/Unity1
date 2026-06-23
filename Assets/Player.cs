@@ -2,13 +2,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    //private int attack = 10;
-    //public int health = 15;
-    //[SerializeField] private int speed = 10;
-    //[SerializeField] Sprite gun;
-    float num = 0;
-    float my = 0;
-    
+    int hp = 10;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -18,13 +13,44 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        num = Mathf.Repeat(Time.time, 10f);
-        Debug.Log(num);
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if(hp != 0)
+            {
+            hp -= 1;
+            Debug.Log("-1HP");
+            Debug.Log($"Health: {hp}");
+            CheckHealth();
+            }
+            else
+            {
+                Debug.Log("YOU ARE DEAD");
+            }
+        }
 
-        my += 1;
-        my = Mathf.Repeat(my, 5f);
-        Debug.Log(my);
-        Debug.Log("-----------");
+    }
 
+    void CheckHealth()
+    {
+        if (hp > 6)
+        {
+            //game green
+            Debug.Log("Green");
+        }
+        else if (hp > 2)
+        {
+            //game orange
+            Debug.Log("Orange");
+        }
+        else if (hp >= 1)
+        {
+            //game red
+            Debug.Log("Red");
+        }
+        else
+        {
+            //dead
+            Debug.Log("DEAD");
+        }
     }
 }
