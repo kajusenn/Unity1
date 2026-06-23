@@ -3,22 +3,18 @@ using UnityEngine.UIElements;
 
 public class Player : MonoBehaviour
 {
-    //[SerializeField] Transform trans;
-    //Transform trans2;
-
-    SpriteRenderer spriteRenderer;
-    [SerializeField] Sprite sprite;
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
-        spriteRenderer.sprite = sprite;
+        int randNum = Random.Range(0, 11);
+        Debug.Log(randNum);
+
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        float randNumFloat = Random.Range(0f, 11f);
+        Debug.Log(randNumFloat);
     }
 }
