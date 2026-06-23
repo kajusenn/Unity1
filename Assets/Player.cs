@@ -1,20 +1,19 @@
 using UnityEngine;
-using UnityEngine.UIElements;
 
 public class Player : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    //Vector3 pos = new Vector3(1f, 2f, 3f);
+    //Vector3 pos = new(0f, 0f 0f);
+    [SerializeField] Transform enemy;
+
     void Start()
     {
-        int randNum = Random.Range(0, 11);
-        Debug.Log(randNum);
-
+        //transform.position = Vector3.zero;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        float randNumFloat = Random.Range(0f, 11f);
-        Debug.Log(randNumFloat);
+        //transform.position += Vector3.right;
+        transform.position = Vector3.MoveTowards(transform.position, enemy.position, Time.deltaTime);
     }
 }
