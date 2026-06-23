@@ -3,17 +3,14 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    //List<string> cars = new();
-    [SerializeField] List<string> cars = new();
+    [SerializeField] List<string> cars;
 
     void Start()
     {
-        cars.Add("Audi");
-        cars.Add("Honda");
-        Debug.Log(cars[0]);
-
-        cars.RemoveAt(1);
-        Debug.Log(cars.Count);
+        foreach (string car in cars)
+        {
+            Debug.Log(car);
+        }
     } 
 
     void Update()
