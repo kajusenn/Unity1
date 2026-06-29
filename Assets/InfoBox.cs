@@ -1,27 +1,30 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
-using Unity.Collections;
-using Unity.Mathematics;
+
+
 
 public class InfoBox : MonoBehaviour
 {
     [SerializeField] TMP_Text infoText;
 
     [SerializeField] TMP_Text randomNumber;
+    [SerializeField] Button randomBtn;
 
     [SerializeField] TMP_Text m_Text;
     [SerializeField] TMP_Text m_TextCorrect;
     [SerializeField] TMP_Text m_TextRecord;
     [SerializeField] TMP_InputField m_InputField;
 
-    [SerializeField] Button randomBtn;
+    [SerializeField] Slider volumeSlider;
+    [SerializeField] TMP_Text volumeText;
+    [SerializeField] AudioSource audioSource;
+    [SerializeField] Image[] speaker;
 
     string replay;
     int rightAns = 0;
     int record = 0;
+
 
     void Start()
     {
@@ -76,5 +79,23 @@ public class InfoBox : MonoBehaviour
             m_TextCorrect.text = $"Good Answers: {rightAns}";
             m_TextRecord.text = $"Record: {record}";
         }
+    }
+
+    public void ChangeVolume()
+    {
+        volumeText.text = volumeSlider.value.ToString();
+        audioSource.volume = volumeSlider.value / volumeSlider.maxValue;
+
+        float currentVal = volumeSlider.value;
+
+        speaker[0].enabled = currentVal >= 0;
+        speaker[1].enabled = currentVal >= 25;
+        speaker[2].enabled = currentVal >= 50;
+        speaker[3].enabled = currentVal >= 90;
+    }
+
+    public void Exit()
+    {
+        Application.Quit();
     }
 }
