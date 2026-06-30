@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: ea36a0d65edc95f4794bf88da7c1ac05
+guid: 46e7eacb49b39ae4b8ce94bf7df673fd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7376371385706723170
-    second: ctlr btns_0
-  - first:
-      213: -1093012940645049832
-    second: ctlr btns_1
-  - first:
-      213: -2798822104607000461
-    second: ctlr btns_2
-  - first:
-      213: 138826460284176197
-    second: ctlr btns_3
+      213: -3878557786174838139
+    second: ground_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -105,93 +96,40 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ctlr btns_0
+      name: ground_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 202
-        height: 200
+        width: 1015
+        height: 188
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 267b76091b22e5660800000000000000
-      internalID: 7376371385706723170
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ctlr btns_1
-      rect:
-        serializedVersion: 2
-        x: 222
-        y: 0
-        width: 203
-        height: 200
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 81a52f18586d4d0f0800000000000000
-      internalID: -1093012940645049832
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ctlr btns_2
-      rect:
-        serializedVersion: 2
-        x: 445
-        y: 0
-        width: 203
-        height: 200
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3787369ef169829d0800000000000000
-      internalID: -2798822104607000461
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ctlr btns_3
-      rect:
-        serializedVersion: 2
-        x: 672
-        y: 0
-        width: 202
-        height: 200
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 547c9aa1ee53de100800000000000000
-      internalID: 138826460284176197
+      spriteID: 58a29323e389c2ac0800000000000000
+      internalID: -3878557786174838139
       vertices: []
       indices: 
       edges: []
@@ -200,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 4e5ac801b9151f244bf21f06725ea141
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -210,10 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ctlr btns_0: 7376371385706723170
-      ctlr btns_1: -1093012940645049832
-      ctlr btns_2: -2798822104607000461
-      ctlr btns_3: 138826460284176197
+      ground_0: -3878557786174838139
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: 97d42b603ecb7de4282143898d934eac
+guid: 4218fb4c7fa4226479b8dd8bde556f7d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8229598120360318422
-    second: speaker_0
-  - first:
-      213: -666862027130193201
-    second: speaker_1
-  - first:
-      213: -5984886456545762041
-    second: speaker_2
-  - first:
-      213: 5319525106251940572
-    second: speaker_3
+      213: -3310285328230383276
+    second: backgound_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -105,93 +96,40 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: speaker_0
+      name: backgound_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 5
-        width: 102
-        height: 253
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a2a63bf9c189acd80800000000000000
-      internalID: -8229598120360318422
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: speaker_1
-      rect:
-        serializedVersion: 2
-        x: 120
-        y: 81
-        width: 32
-        height: 101
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fca35bef484deb6f0800000000000000
-      internalID: -666862027130193201
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: speaker_2
-      rect:
-        serializedVersion: 2
-        x: 155
-        y: 39
-        width: 47
-        height: 185
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7052b802a7961fca0800000000000000
-      internalID: -5984886456545762041
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: speaker_3
-      rect:
-        serializedVersion: 2
-        x: 188
         y: 0
-        width: 63
-        height: 263
+        width: 1774
+        height: 887
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cd24beb66efb2d940800000000000000
-      internalID: 5319525106251940572
+      spriteID: 45104a958018f02d0800000000000000
+      internalID: -3310285328230383276
       vertices: []
       indices: 
       edges: []
@@ -200,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a97f268eb09f5af45aa90e336b614e87
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -210,10 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      speaker_0: -8229598120360318422
-      speaker_1: -666862027130193201
-      speaker_2: -5984886456545762041
-      speaker_3: 5319525106251940572
+      backgound_0: -3310285328230383276
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
