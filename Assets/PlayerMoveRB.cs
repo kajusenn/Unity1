@@ -2,8 +2,10 @@ using UnityEngine;
 
 public class PlayerMoveRB : MonoBehaviour
 {
+    [SerializeField] int jumpMaxNum = 2;
     Rigidbody2D rb;
 
+    int jumpNum = 0;
     float moveSpeed = 5f;
     float dirX;
 
@@ -43,9 +45,16 @@ public class PlayerMoveRB : MonoBehaviour
 
     void Jump()
     {
-        if (isJumping)
+        if (isJumping && jumpNum < jumpMaxNum)
         {
             rb.linearVelocity += Vector2.up * jumptForce;
+            isJumping = false;
+            jumpNum++;
+        }
+
+        if(Mathf.Abs(rb.linearVelocity.y) < 0.001f)
+        {
+            jumpNum = 0;
             isJumping = false;
         }
     }
