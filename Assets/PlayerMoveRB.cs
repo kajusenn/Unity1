@@ -11,12 +11,16 @@ public class PlayerMoveRB : MonoBehaviour
     float jumptForce = 5f;
 
     private void Awake() => rb = GetComponent<Rigidbody2D>();
+
+    int lastDirX = 0;
     
     void Update()
     {
         dirX = Input.GetAxisRaw("Horizontal");
 
         GetUserInput();
+
+        RotatePlayer();
     }
 
     private void FixedUpdate()
@@ -32,6 +36,9 @@ public class PlayerMoveRB : MonoBehaviour
         {
             isJumping = true;
         }
+
+        //Input.GetKeyDown(KeyCode.Space);
+        //Input.GetMouseButtonDown(1);
     }
 
     void Jump()
@@ -40,6 +47,27 @@ public class PlayerMoveRB : MonoBehaviour
         {
             rb.linearVelocity += Vector2.up * jumptForce;
             isJumping = false;
+        }
+    }
+
+    void RotatePlayer()
+    {
+        if(lastDirX != (int)dirX){
+            if (dirX == 0) 
+                return;
+            int rotY = dirX > 0 ? 0 : 180;
+            transform.localRotation = Quaternion.Euler(0f, rotY, 0f);
+            lastDirX = (int)dirX;
+
+            //int rotY;
+            //if(dirX > 0)
+            //{
+            //    rotY = 0;
+            //}
+            //else
+            //{
+            //    rotY = 180;
+            //}
         }
     }
 }
